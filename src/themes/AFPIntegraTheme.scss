@@ -1,0 +1,103 @@
+// YELLOW
+$color-yellow-5: #fffef6;
+$color-yellow-10: #fffcec;
+$color-yellow-20: #fff6b5;
+$color-yellow-30: #ffef7d;
+$color-yellow-40: #ffe946; // Primary
+$color-yellow-50: #b3a331;
+$color-yellow-60: #665d1c;
+
+$color-yellow-40-hover: #fce117;
+
+
+// BLUE
+$color-blue-5: #f6fcff; // Background
+$color-blue-10: #e5eef8;
+$color-blue-20: #99bce7;
+$color-blue-30: #4c89d4;
+$color-blue-40: #0057c2; // Primary
+$color-blue-50: #003d88;
+$color-blue-60: #00234e;
+
+$color-blue-40-hover: #013A81;
+$color-blue-gradient: #014989;
+$color-blue-bg: #F2F6FC;
+
+
+// AQUA
+$color-aqua-5: #f2fbfc; // Background
+$color-aqua-10: #e5f6f9;
+$color-aqua-20: #99dfe9;
+$color-aqua-30: #4cc6d7;
+$color-aqua-40: #00aec7; // Primary
+$color-aqua-50: #007a8b;
+$color-aqua-60: #004650;
+
+$color-aqua-gradient: #138fb9;
+
+
+// GRAY-DARK
+$color-gray-dark-5: #f6f6f7;
+$color-gray-dark-10: #edeeef;
+$color-gray-dark-20: #b7bbc0;
+$color-gray-dark-30: #818891;
+$color-gray-dark-40: #4c5662; // Primary
+
+
+// GRAY-STEEL
+$color-gray-steel-5: #f7f8f9;
+$color-gray-steel-10: #eef1f3;
+$color-gray-steel-20: #becad3;
+$color-gray-steel-30: #91a1b0;
+$color-gray-steel-40: #6a798b;  // Primary Light
+
+
+// OTHERS-GRAYS
+$color-gray-desactive-40: #e2e2e2; // Primary
+$color-gray-bg-30: #EAF0F820;
+$color-gray-bg-40: #f2f5f9; // Background
+$color-gray-silver-30: #D9D9D9;
+$color-gray-silver-40: #c1c7d5; // Lines
+$color-gray-text-disabled: #9096A2;
+$color-gray-border-disabled: #cacaca;
+
+// RED
+$color-red-5: #FFE0E8; // Background
+$color-red-40: #E13C67; // Primary
+
+// GREEN
+$color-green-5: #D8FFE6; // Background
+$color-green-40: #69C78A; // Primary
+
+
+// button-component
+$button-fill-background: $color-yellow-40;
+$button-fill-hover-background: #F6DB12;
+$button-fill-color: $color-blue-40;
+$button-fill-active-background: $color-yellow-30;
+$button-fill-disabled-background: $color-gray-desactive-40;
+
+$button-ghost-border: $color-blue-40;
+$button-ghost-hover-background: $color-blue-40;
+$button-ghost-active-background: $color-blue-30;
+$button-ghost-disabled-color: $color-gray-desactive-40;
+$button-ghost-disabled-border: $color-gray-desactive-40;
+
+$button-outline-border: $color-blue-10;
+$button-outline-hover-border: $color-blue-20;
+$button-outline-active-background: $color-blue-10;
+$button-outline-active-border: $color-blue-20;
+$button-outline-disabled-color: $color-gray-desactive-40;
+$button-outline-disabled-border: $color-gray-desactive-40;
+
+$button-tonality-background: $color-blue-bg;
+$button-tonality-border: $color-blue-20;
+$button-tonality-hover-background: $color-blue-10;
+$button-tonality-active-background: white;
+$button-tonality-disabled-background: $color-gray-desactive-40;
+$button-tonality-disabled-border: $color-gray-border-disabled;
+
+$button-outlinewhite-hover-color: $color-blue-40;
+$button-outlinewhite-hover-border: $color-yellow-40;
+$button-outlinewhite-hover-background: $color-yellow-40;
+$button-outlinewhite-active-border: $color-yellow-30;

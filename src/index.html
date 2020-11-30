@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
-    <title>Stencil Component Starter</title>
 
-    <script type="module" src="/build/sura-design-system.esm.js"></script>
-    <script nomodule src="/build/sura-design-system.js"></script>
-  </head>
-  <body>
-    <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <title>Stencil Component Starter</title>
+
+  <script type="module" src="/build/sura-design-system.esm.js"></script>
+  <script nomodule src="/build/sura-design-system.js"></script>
+  <style>
+    button {
+      background: black !important;
+    }
+
+    .btn-outlinewhite-container {
+      background: #383838;
+      padding: 20px;
+      display: inline-block;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component> -->
+  <fieldset>
+    <legend>DEFAULT:</legend>
+
+    <button-component>Click me</button-component>
+    <button-component theme="ghost">Click me</button-component>
+    <button-component theme="outline">Click me</button-component>
+    <button-component theme="tonality">Click me</button-component>
+    <div class="btn-outlinewhite-container">
+      <button-component theme="outlinewhite">Click me</button-component>
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>DISABLED:</legend>
+
+    <button-component disabled>Click me</button-component>
+    <button-component disabled theme="ghost">Click me</button-component>
+    <button-component disabled theme="outline">Click me</button-component>
+    <button-component disabled theme="tonality">Click me</button-component>
+    <div class="btn-outlinewhite-container">
+      <button-component disabled theme="outlinewhite">Click me</button-component>
+    </div>
+  </fieldset>
+  <!-- <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component> -->
+</body>
+
 </html>

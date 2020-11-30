@@ -1,0 +1,190 @@
+.c_button{
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 60px;
+  font-family: "fs_joeymedium";
+  font-weight: 500;
+  font-size: 0;
+  user-select: none;
+  outline: 0;
+
+  // Size default: small
+  padding: 12px 30px;
+
+  // Theme dedault: fill
+  background: $button-fill-background center;
+  color: $button-fill-color;
+  transition: background 0.8s;
+
+  &:hover{
+    background: $button-fill-hover-background radial-gradient(circle, transparent 1%, $button-fill-hover-background 1%) center/15000%;
+  }
+  &:active{
+    background-color: $button-fill-active-background;
+    background-size: 100%;
+    transition: background 0s;
+  }
+
+  &[disabled]{
+    background-color: $button-fill-disabled-background;
+    color: white;
+    pointer-events: none;
+    transition: none;
+  }
+
+}
+
+.c_button__spin{
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+.c_button__text{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 20px;
+  pointer-events: none;
+}
+
+// Sizes
+.c_button__SizeXsmall{
+  padding: 7px 19px;
+
+  .c_button__text{
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .c_button__spin{
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+  }
+}
+
+.c_button__SizeMedium{
+  padding: 16px 38px;
+
+  .c_button__text{
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .c_button__spin{
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.c_button__SizeLarge{
+  padding: 18px 42px;
+
+  .c_button__text{
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .c_button__spin{
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.c_button__SizeXlarge{
+  padding: 18px 48px;
+
+  .c_button__text{
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .c_button__spin{
+    width: 26px;
+    height: 26px;
+  }
+}
+
+// Themes
+.c_button__ThemeGhost{
+  background: transparent center;
+  border: 2px solid $button-ghost-border;
+
+  &:hover{
+    color: white;
+    background: $button-ghost-hover-background radial-gradient(circle, transparent 1%, $button-ghost-hover-background 1%) center/15000%;
+  }
+  &:active{
+    color: white;
+    background-color: $button-ghost-active-background;
+    border: 2px solid transparent;
+    background-size: 100%;
+  }
+  &[disabled]{
+    color: $button-ghost-disabled-color;
+    background: white;
+    border: 2px solid $button-ghost-disabled-border;
+  }
+}
+
+.c_button__ThemeOutline{
+  background: transparent center;
+  border: 2px solid $button-outline-border;
+
+  &:hover{
+    border: 2px solid $button-outline-hover-border;
+    background: white radial-gradient(circle, transparent 1%, white 1%) center/15000%;
+  }
+  &:active{
+    background-color: $button-outline-active-background;
+    border: 2px solid $button-outline-active-border;
+    background-size: 100%;
+  }
+  &[disabled]{
+    color: $button-outline-disabled-color;
+    background: white;
+    border: 2px solid $button-outline-disabled-border;
+  }
+}
+
+.c_button__ThemeTonality{
+  background: $button-tonality-background;
+  border: 2px solid $button-tonality-border;
+  &:hover{
+    background: $button-tonality-hover-background radial-gradient(circle, transparent 1%, $button-tonality-hover-background 1%) center/15000%;
+  }
+
+  &:active{
+    background-color: $button-tonality-active-background;
+    background-size: 100%;
+  }
+
+  &[disabled]{
+    background-color: $button-tonality-disabled-background;
+    border-color: $button-tonality-disabled-border;
+    color: white;
+    pointer-events: none;
+    transition: none;
+  }
+}
+
+.c_button__ThemeOutlineWhite{
+  background: transparent center;
+  border: 2px solid white;
+  color: white;
+
+  &:hover{
+    border: none;
+    color: $button-outlinewhite-hover-color;
+    border: 2px solid $button-outlinewhite-hover-border;
+    background: $button-outlinewhite-hover-background radial-gradient(circle, transparent 1%, $button-outlinewhite-hover-background 1%) center/15000%;
+  }
+  &:active{
+    border: 2px solid $button-outlinewhite-active-border;
+    background-color: white;
+    background-size: 100%;
+  }
+}
